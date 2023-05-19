@@ -8,6 +8,12 @@ namespace GamePaintBall
 {
     internal class PaintballGun
     {
+        public PaintballGun( int balls , int magazineSize , bool loaded)
+        {
+            this.balls = balls;
+            MagazineSize = magazineSize;
+            if (!loaded) { Reload(); }
+        }
         public int MagazineSize { get; private set; } = 16;
 
         private int balls = 0;

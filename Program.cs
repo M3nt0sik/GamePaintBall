@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-       PaintballGun Gun = new PaintballGun();
+       PaintballGun Gun = new PaintballGun(1,9,true);
         while (true)
         {
             Console.WriteLine($"Kulki: {Gun.Balls}, zaladowano: {Gun.BallsLoaded}");
