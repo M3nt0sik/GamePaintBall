@@ -8,10 +8,10 @@ namespace GamePaintBall
 {
     internal class PaintballGun
     {
-        public const int MAGAZINE_SIZE = 16;
+        public int MagazineSize { get; private set; } = 16;
 
         private int balls = 0;
-        public int BallsLoaded { get; set; }
+        public int BallsLoaded { get; private set; }
 
 
 
@@ -31,9 +31,9 @@ namespace GamePaintBall
         }
         public void Reload()
         {
-            if (balls > MAGAZINE_SIZE)
+            if (balls > MagazineSize)
             {
-                BallsLoaded = MAGAZINE_SIZE;
+                BallsLoaded = MagazineSize;
 
             }
             else

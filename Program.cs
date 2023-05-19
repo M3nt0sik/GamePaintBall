@@ -14,7 +14,7 @@ internal class Program
             char key = Console.ReadKey(true).KeyChar;
             if (key == ' ') Console.WriteLine($"Proba strzalu: {Gun.Shoot()}");
             else if (key == 'p') Gun.Reload();
-            else if (key == '+') Gun.Balls += PaintballGun.MAGAZINE_SIZE;
+            else if (key == '+') Gun.Balls += Gun.MagazineSize;
             else if (key == 'k') return;
         }
     }
