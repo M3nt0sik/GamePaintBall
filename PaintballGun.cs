@@ -15,14 +15,17 @@ namespace GamePaintBall
 
         public int GetBallsLoaded() { return ballsLoaded; }
         public bool IsEmpty() { return ballsLoaded == 0; }
-        public int GetBalls() { return balls; }
-
-        public void SetBalls(int numberOfBalls)
+        public int Balls
         {
-            if (numberOfBalls > 0)
+            get { return balls; }
+
+            set
             {
-                balls = numberOfBalls;
-                Reload();
+                if (value > 0)
+                {
+                    balls = value;
+                    Reload();
+                }
             }
         }
         public void Reload()
