@@ -7,7 +7,7 @@ internal class Program
        PaintballGun Gun = new PaintballGun();
         while (true)
         {
-            Console.WriteLine($"Kulki: {Gun.Balls}, zaladowano: {Gun.GetBallsLoaded()}");
+            Console.WriteLine($"Kulki: {Gun.Balls}, zaladowano: {Gun.BallsLoaded}");
             if (Gun.IsEmpty()) Console.WriteLine("Ostrzezenie brak amunicji");
             Console.WriteLine("Spacja - strzal, p - przeladowanie," +
                 " + - dodaj amunicje, k - koniec");
