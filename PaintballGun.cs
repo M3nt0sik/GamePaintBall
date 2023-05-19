@@ -13,7 +13,13 @@ namespace GamePaintBall
         private int balls = 0;
         private int ballsLoaded = 0;
 
-        public int GetBallsLoaded() { return ballsLoaded; }
+       
+        public int BallsLoaded
+        {
+            get { return ballsLoaded; }
+
+            set { ballsLoaded = value; }
+        }
         public bool IsEmpty() { return ballsLoaded == 0; }
         public int Balls
         {
